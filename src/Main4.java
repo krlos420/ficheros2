@@ -7,5 +7,8 @@ public class Main4 {
         int cantidad = Leer.leerEntero("Introduce un numero entero: ");
         File f = new File(ruta);
         Funciones.generarFicheroEnteros(f, cantidad);
+        Funciones.mostrarFicheroEnteros(f);
+        int cantidad2 = Leer.leerEntero("Cuantos numeros mas quieres añadir? ");
+        Funciones.añadirFicheroEnteros(f, cantidad2);
     }
 }
